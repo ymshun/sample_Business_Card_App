@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="TEL"
+        android:hint="住所"
         android:inputType="textPersonName"
         android:text="ハレー彗星3ー7アルファ"
         app:layout_constraintStart_toStartOf="@+id/telEdit"
