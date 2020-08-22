@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/companyEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="会社名"
+        android:inputType="textPersonName"
+        android:text="株式会社ジュピター"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/telEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="TEL"
+        android:inputType="phone"
+        android:text="01-123-1234"
+        app:layout_constraintStart_toStartOf="@+id/companyEdit"
+        app:layout_constraintTop_toBottomOf="@+id/companyEdit" />
+
+    <EditText
+        android:id="@+id/addressEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="TEL"
+        android:inputType="textPersonName"
+        android:text="ハレー彗星3ー7アルファ"
+        app:layout_constraintStart_toStartOf="@+id/telEdit"
+        app:layout_constraintTop_toBottomOf="@+id/telEdit" />
+
+    <EditText
+        android:id="@+id/roleEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="役職"
+        android:inputType="textPersonName"
+        android:text="外惑星探査部長"
+        app:layout_constraintStart_toStartOf="@+id/addressEdit"
+        app:layout_constraintTop_toBottomOf="@+id/addressEdit" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="氏名"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/roleEdit"
+        app:layout_constraintTop_toBottomOf="@+id/roleEdit" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="保存"
+        app:layout_constraintEnd_toStartOf="@+id/cancelBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEdit" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="キャンセル"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/saveBtn"
+        app:layout_constraintTop_toTopOf="@+id/saveBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
